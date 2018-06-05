@@ -1,28 +1,29 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
-  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse text-uppercase" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">HOME
-          <span class="sr-only">(current)</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/skills" routerLinkActive="active">My Skills</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/portfolio" routerLinkActive="active">portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/contact" routerLinkActive="active">contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">about me</a>
-      </li>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+<nav id="sidebar">
+    <div class="sidebar-header">
+        <div class="person-avatar col-md-12 text-center">
+            <img src="/assets/images/avatar/1.JPG" alt="avatar" class="avatar">
+            <div class="person-content text-uppercase">
+                <h5>Seema Hemani</h5>
+                <h6>Front-End Web Developer</h6>
+            </div>
+        </div>
+    </div>
+    <ul class="list-unstyled components">
+        <li routerLinkActive="active">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active">HOME</a>
+        </li>
+        <li routerLinkActive="active">
+            <a class="nav-link" routerLink="/skills" routerLinkActive="active">My Skills</a>
+        </li>
+        <li routerLinkActive="active">
+            <a class="nav-link" routerLink="/portfolio" routerLinkActive="active">portfolio</a>
+        </li>
+        <li routerLinkActive="active">
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active">contact</a>
+        </li>
     </ul>
-  </div>
 </nav>
