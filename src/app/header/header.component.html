@@ -1,14 +1,14 @@
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-<nav id="sidebar">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="navbarNav" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<nav id="sidebar" class="text-uppercase">
     <div class="sidebar-header">
         <div class="person-avatar col-md-12 text-center">
             <img src="/assets/images/avatar/1.JPG" alt="avatar" class="avatar">
-            <div class="person-content text-uppercase">
+            <div class="person-content">
                 <h5>Seema Hemani</h5>
-                <h6>Front-End Web Developer</h6>
+                <span>Front-End Web Developer</span>
             </div>
         </div>
     </div>
@@ -25,5 +25,8 @@
         <li routerLinkActive="active">
             <a class="nav-link" routerLink="/contact" routerLinkActive="active">contact</a>
         </li>
+        <li routerLinkActive="active">
+                <a class="nav-link" routerLink="/aboutme" routerLinkActive="active">About me</a>
+            </li>
     </ul>
 </nav>
