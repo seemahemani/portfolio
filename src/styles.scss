@@ -7,10 +7,11 @@ html {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
     font-family: 100% $font-stack !important;
+    font-size: 14px;
   } 
   h1{
-    font-size: 30px;
+    font-size: 40px;
   }
   .highlight{
-    color: $theme-color;
+    color: #f92f38;
   }

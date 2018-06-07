@@ -1,8 +1,36 @@
 <div class="main-section container">
-  <h1 class="main-title text-uppercase">contact me </h1>
-  <p>I am available for hire.</p>
-  <div class="container text-left">
-    <div class="row">
+  <h1 class="main-title">Contact me </h1>
+  <div class="row">
+    <div class="col-md-12">
+      <ngui-map center="[51.58026239,-0.32064179]" [fullscreenControl]="true">
+        <marker position="[51.58026239,-0.32064179]" [geoFallbackPosition]="[51.58026239,-0.32064179]" draggable="true" (click)="clicked($event)"
+          (initialized$)="onMarkerInit($event)"></marker>
+        <info-window id="iw">
+          <div>
+            <h6>
+              <strong>Seema Hemani </strong>
+            </h6>
+            <p>Mendip House,
+              <br> 69 Kenton Road,
+              <br> HA3 0AQ, London, UK</p>
+            <p>
+              <span style="margin-right: 12px;">
+                <i class="fa fa-envelope"></i>
+              </span>
+              <a href="mailto:someone@example.com">simih61@gmail.com</a>
+            </p>
+            <p>
+              <span style="margin-right: 12px;">
+                <i class="fa fa-linkedin"></i>
+              </span>
+              <a target="_blank" href="https://www.linkedin.com/in/seema-hemani-170b4958/">Seema Hemani</a>
+            </p>
+          </div>
+        </info-window>
+      </ngui-map>
+    </div>
+  </div>
+  <!-- <div class="row">
       <div class="col-md-2">Email:</div>
       <div class="col-md-4">
         <a href="mailto:someone@example.com">simih61@gmail.com</a>
@@ -18,7 +46,6 @@
       <div class="col-md-2">Github:</div>
       <div class="col-md-4">
         <a href="https://github.com/seemahemani">seemahemani</a>
-      </div>
-    </div>
-  </div>
+      </div>LinkedIn
+    </div> -->
 </div>

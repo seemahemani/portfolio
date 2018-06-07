@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { AboutModule } from './about/about.module';
+import { NguiMapModule} from '@ngui/map';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
@@ -25,7 +27,9 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
   ],
   imports: [
     BrowserModule,
+    AngularFontAwesomeModule,
     AboutModule,
+    NguiMapModule.forRoot({apiUrl: 'https://maps.google.com/maps/api/js?key=AIzaSyAoos-cq5m9Vgbfah7KoA4WHVDopmpXwBA'}),
     RouterModule.forRoot(routes, {
       useHash: true
     })

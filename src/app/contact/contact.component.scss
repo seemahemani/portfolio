@@ -1,0 +1,13 @@
+app-contact {
+    ngui-map {
+        height: calc(78vh);
+    }
+    a {
+        &:hover{
+            color: #f92f38;
+            font-weight: bold;
+        }
+        color: #f92f38;
+        font-weight: bold;
+    }
+}
